@@ -6,6 +6,7 @@ param(
 $workspace1 = "LAWorkspace2-student"
 $workspace2 = "LAWorkspace3-student"
 
+Connect-AzAccount
 Write-Host "Deleting Log Analytics workspaces: $workspace1, $workspace2"
 
 # Delete workspace1
