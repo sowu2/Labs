@@ -1,13 +1,10 @@
-param(
-    [Parameter(Mandatory=$true)]
-    [string]$user_alias,
-    
+param(    
     [Parameter(Mandatory=$true)]
     [string]$resource_group
 )
 
-$workspace1 = "LAWorkspace2-$user_alias"
-$workspace2 = "LAWorkspace3-$user_alias"
+$workspace1 = "LAWorkspace2-student"
+$workspace2 = "LAWorkspace3-student"
 
 Write-Host "Deleting Log Analytics workspaces: $workspace1, $workspace2"
 
