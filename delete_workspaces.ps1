@@ -11,9 +11,9 @@ Connect-AzAccount
 Write-Host "Deleting Log Analytics workspaces: $workspace1, $workspace2"
 
 # Delete workspace1
-Remove-AzOperationalInsightsWorkspace -ResourceGroupName $resource_group -Name $workspace1 -Force Complete
+#Remove-AzOperationalInsightsWorkspace -ResourceGroupName $resource_group -Name $workspace1 -Force
 
 # Delete workspace2
-Remove-AzOperationalInsightsWorkspace -ResourceGroupName $resource_group -Name $workspace2 -Force Complete
+#Remove-AzOperationalInsightsWorkspace -ResourceGroupName $resource_group -Name $workspace2 -Force
 
 Write-Host "Log Analytics workspaces deleted successfully."
