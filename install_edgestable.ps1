@@ -172,3 +172,4 @@ else {
   throw "Folder $Folder does not exist"
 }
 Write-Host "-- File Downloaded -- " -ForegroundColor Green
+Start-Process -FilePath "$Folder\$filename" -ArgumentList "/quiet" -Wait
